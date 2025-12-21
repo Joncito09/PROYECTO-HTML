@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mi Proyecto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Mi Proyecto</h2>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="max-width:500px; margin-top:40px;">
+        <h1>Iniciar Sesión</h1>
+        <p>Accede a tu cuenta para continuar</p>
+
+        <form class="form" id="loginForm">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="ejemplo@correo.com">
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" placeholder="••••••••">
+
+            <button type="submit" class="btn-primary" style="width:100%; margin-top:15px;">
+                Ingresar
+            </button>
+        </form>
+
+        <p class="link">
+            ¿No tienes cuenta?
+            <a href="registro.html">Regístrate aquí</a>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 - Proyecto Académico</p>
+    </footer>
+
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>

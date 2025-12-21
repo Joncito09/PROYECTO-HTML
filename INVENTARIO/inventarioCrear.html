@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Producto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Mi Proyecto</h2>
+            <ul class="menu">
+                <li><a href="inventario.html">Inventario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-container">
+        <h1>Agregar Producto</h1>
+
+        <form class="form" onsubmit="crearProducto(event)">
+            <label>Producto</label>
+            <input type="text" id="producto">
+
+            <label>Cantidad</label>
+            <input type="number" id="cantidad">
+
+            <label>Precio</label>
+            <input type="number" id="precio" step="0.01">
+
+            <p id="error" class="error"></p>
+
+            <button type="submit" class="btn">Guardar</button>
+            <a href="inventario.html" class="btn Canselar">Canselar</a>
+        </form>
+    </section>
+
+    <script src="../js/inventario.js"></script>
+
+</body>
+
+</html>

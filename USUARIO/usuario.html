@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios - Mi Proyecto</title>
+    <link rel="stylesheet" href="../css/usuario.css">
+</head>
+<body onload="listarUsuarios()">
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Mi Proyecto</h2>
+            <ul class="menu">
+                <li><a href="../Paginas/dashboard.html">Dashboard</a></li>
+                <li><a href="usuario.html" class="active">Usuarios</a></li>
+                <li><a href="usuarioCrear.html">Crear Usuario</a></li>
+                <li><a href="../Paginas/login.html">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="container">
+        <h1>Listado de Usuarios</h1>
+        <p>Gestión de usuarios del sistema (CRUD)</p>
+
+        <a href="usuarioCrear.html" class="btn">+ Nuevo Usuario</a>
+
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Rol</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaUsuarios">
+                <!-- Filas generadas por JavaScript -->
+            </tbody>
+        </table>
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/usuario.js"></script>
+</body>
+</html>
+

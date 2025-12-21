@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Pedido</title>
+    <link rel="stylesheet" href="../css/usuario.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Mi Proyecto</h2>
+            <ul class="menu">
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="../Paginas/dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Crear Pedido</h1>
+
+        <form class="form" onsubmit="crearPedido(event)">
+            <label>Cliente</label>
+            <input type="text" id="cliente" placeholder="Nombre del cliente">
+
+            <label>Fecha</label>
+            <input type="date" id="fecha">
+
+            <label>Total</label>
+            <input type="number" id="total" step="0.01" placeholder="0.00">
+
+            <p id="error" class="error"></p>
+
+            <button class="btn">Guardar Pedido</button>
+            <a href="pedidos.html" class="btn eliminar">Cancelar</a>
+        </form>
+
+    </main>
+
+    <script src="../js/pedido.js"></script>
+</body>
+
+</html>

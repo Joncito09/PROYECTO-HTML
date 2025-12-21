@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Mi Proyecto</h2>
+            <ul class="menu">
+                <li><a href="../Paginas/dashboard.html">Dashboard</a></li>
+                <li><a href="inventario.html" class="active">Inventario</a></li>
+                <li><a href="inventarioCrear.html">Agregar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h1>Inventario de Productos</h1>
+
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaInventario">
+                <!-- generado por JS -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="../js/inventario.js"></script>
+</body>
+
+</html>

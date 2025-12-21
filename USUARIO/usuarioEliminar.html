@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Usuario</title>
+    <link rel="stylesheet" href="../css/usuario.css">
+</head>
+<body onload="cargarUsuarioEliminar()">
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Mi Proyecto</h2>
+        <ul class="menu">
+            <li><a href="usuario.html">Usuarios</a></li>
+            <li><a href="../Paginas/dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <h1>Eliminar Usuario</h1>
+    <p>Confirmación de la operación CRUD (Eliminar)</p>
+
+    <div class="alerta">
+        <p><strong>⚠ Atención:</strong> ¿Estás seguro de que deseas eliminar el siguiente usuario?</p>
+
+        <ul class="info-usuario">
+            <li><strong>Nombre:</strong> <span id="nombreUsuario"> </span></li>
+            <li><strong>Email:</strong> <span id="emailUsuario"> </span></li>
+            <li><strong>Rol:</strong> <span id="rolUsuario"> </span></li>
+        </ul>
+    </div>
+
+    <div class="acciones">
+        <button class="btn eliminar" onclick="eliminarUsuario()">Sí, eliminar</button>
+        <a href="usuario.html" class="btn">Cancelar</a>
+    </div>
+</main>
+
+<script src="../js/usuario.js"></script>
+
+</body>
+</html>

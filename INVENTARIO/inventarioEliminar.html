@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar Producto</title>
+    <link rel="stylesheet" href="../css/usuario.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Mi Proyecto</h2>
+        <ul class="menu">
+            <li><a href="inventario.html">Inventario</a></li>
+            <li><a href="../Paginas/dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <h1>Eliminar Producto</h1>
+    <p>Confirmación de la operación CRUD (Eliminar)</p>
+
+    <div class="alerta">
+        <p><strong>⚠ Atención:</strong> ¿Desea eliminar el siguiente producto?</p>
+
+        <ul id="infoProducto"></ul>
+    </div>
+
+    <div class="acciones">
+        <button class="btn eliminar" onclick="confirmarEliminar()">Sí, eliminar</button>
+        <a href="inventario.html" class="btn">Cancelar</a>
+    </div>
+</main>
+
+<script src="../js/inventario.js"></script>
+</body>
+</html>
